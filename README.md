@@ -4,7 +4,7 @@ This is the first task, dont mind the name :D
 # Portfolio
 Webapplications portfolio
 
-##Task One
+## Task One
 
 - User enters website
 - User clicks Projects
@@ -15,7 +15,7 @@ Webapplications portfolio
 - A POST request is sendt to the server with the data the user has filled in
 - once the request is received by the server, the server then processes the info and stores it in the json file
 
-##Task Two
+## Task Two
 
 - Once the user enters the website, the website retrieves information from its database
 - This information is then displayed for the user
