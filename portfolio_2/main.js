@@ -1,39 +1,41 @@
 import './style.css'
 
-let DatabaseInfo = 
-`[
-    {
-       "Name": "Martine",
-       "Title": "Title",
-       "Date": "Date",
-       "Link": "here's a link",
-       "Description": "Description",
-       "projects": ["Portfolio_1", "Portfolio_2"]
-           }
-    ]
-`
-   
-       console.log(JSON.parse(DatabaseInfo))
 
+        async function JsonFetch() {
+            try{
+                const response = await fetch('/Components/Database.json')
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`)
+                    }
+                    const data = await response.json()
+                    return data
+                } catch (error) {
+                    console.error("Unable to fetch data:", error)
+                }
+            }
 
+            const projects = await JsonFetch()
 
-       const formApplication = document.querySelector('.form')
+            console.log(projects)
 
-       formApplication.addEventListener('submit', event => {
-        event.preventDefault()
+            const keys = Object.keys(projects)
+            let a, li, para, linkText, element
+            element = (document.getElementById('projects'))
+            for (let i = 0; i < keys.length; i++) {
+                a = document.createElement('a')
+                li = document.createElement('li')
+                para = document.createElement('para')
+                linkText = document.createTextNode(keys[i])
 
-        const formData = new FormData(formApplication)
-        const data = Object.fromEntries(formData)
-
-        fetch('http://localhost:5173/Home', {
-            method:'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        }).then(res => res.json())
-        .then(data => console.log(data))
-        .catch(error => console.log(error))
-       })
+                a.appendChild(linkText)
+                a.title = (`${keys[i]}`)
+                a.href = `/${keys[i]}`
+                
+                li.appendChild(a)
+                element.appendChild(li)
+                element.appendChild(para)
+            }
+        
+            JsonFetch()
 
 
