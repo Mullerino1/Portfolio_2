@@ -17,6 +17,10 @@ Webapplications portfolio
 
 ##Task Two
 
-- 
+- Once the user enters the website, the website retrieves information from its database
+- This information is then displayed for the user
+- the user, to see the projects, will then click the option for projects in the navbar or on the front page(some projects might be displayed ina thought bubble on the front page)
+- this will lead the user to a page in which displays the different projects
+- clicking on one of these projects will tell the website to retrieve the specific information for the project that is chosen by the user
 
 
