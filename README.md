@@ -24,3 +24,7 @@ Webapplications portfolio
 - clicking on one of these projects will tell the website to retrieve the specific information for the project that is chosen by the user
 
 
+## Task 7-8
+
+-Received help and worked on these with Kim Andre
+
