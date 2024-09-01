@@ -22,14 +22,8 @@
     </header>
      <main>
 
-      <figcaption>
-  <div class="container">
-  <img src="/Images/Me.jpg" alt="Profile picture of an anime character" class="image"/>
-  <div class="overlay">
-    <img src="/Images/PFPIzumi.png" alt="Profile picture of an anime character" class="image_2" />
-    </div>
-  </div>
-</figcaption>
+
+    
 
       
 
@@ -40,13 +34,22 @@
         </section>
         <p>this shall be information :D</p>
        
-
       </article>
-      
+
+      <figcaption>
+        <div class="container">
+        <img src="/Images/Me.jpg" alt="Profile picture of an anime character" class="image"/>
+        <div class="overlay">
+          <img src="/Images/PFPIzumi.png" alt="Profile picture of an anime character" class="image_2" />
+          </div>
+        </div>
+      </figcaption>
+
       <script type="module">
         import {postjson} from './main.js'
         window.postjson = postjson
       </script>
+      
       <form onsubmit="postjson(event, this)">
         <label>
           Title

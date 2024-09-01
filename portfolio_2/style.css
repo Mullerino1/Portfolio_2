@@ -123,6 +123,7 @@ header{
   padding-top: 5px;
 
   nav{
+  
 
 
     ul {
@@ -192,51 +193,57 @@ img:hover{
 
 } */
 
-figcaption{
-  padding-top: 15px;
 
-.container{
-  position: relative;
-
- }
-
- .image{
-  display: block;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 10px 20px var(--Black);
- }
- 
- 
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* height: 100%;
-    width: 100%; */
-    opacity: 0;
-    transition: .5s ease;
-  }
- 
-  .container:hover .overlay {
-    opacity: 1;
-  }
-
-  .image_2{
-    display: block;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 10px 20px var(--Black);
-  }
-}
 
 main{
   background-color: var(--Lgray);
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+
+  figcaption{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+  .container{
+    position: relative;
+  
+   }
+  
+   .image{
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 10px 20px var(--Black);
+   }
+   
+   
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: .5s ease;
+    }
+   
+    .container:hover .overlay {
+      opacity: 1;
+    }
+  
+    .image_2{
+      display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 10px 20px var(--Black);
+    }
+  }
 
   article{
     background-color: var(--White);
@@ -246,19 +253,23 @@ main{
     height: 400px;
     padding: 0;
     margin: 0;
+  
 
 
   }
 
   form{
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: right;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 50%;
     width: 500px;
     height: 500px;
     background-color: var(--White);
+
+     label{
+      color: var(--Black)
+     }
   }
 
   footer{
