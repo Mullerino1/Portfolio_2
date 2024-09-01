@@ -1,13 +1,32 @@
- 
- {
-    "Mullers Portfolio": {
-    "Name": "name",
-    "Title": "Title",
-    "Date": "Date",
-    "Link": "here's a link",
-    "Description": "Description",
-    "projects": ["Portfolio_1", "Portfolio_2"]
-        }
-    }
- 
-    
+{
+  "Mullers Portfolio": {
+    "title": "Title",
+    "date": {
+      "day": 1,
+      "month": 9,
+      "year": 2024
+    },
+    "link": "here's a link",
+    "description": "Description"
+  },
+  "test": {
+    "title": "test",
+    "date": {
+      "day": "18",
+      "month": "09",
+      "year": "2024"
+    },
+    "link": "link",
+    "description": {}
+  },
+  "stupid": {
+    "title": "stupid",
+    "date": {
+      "day": "12",
+      "month": "09",
+      "year": "2024"
+    },
+    "link": "stupid",
+    "description": {}
+  }
+}

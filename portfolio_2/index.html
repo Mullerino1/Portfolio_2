@@ -22,25 +22,53 @@
     </header>
      <main>
 
-      <img src="/Images/PFPIzumi.png" alt="Profile picture of an anime character" />
+      <figcaption>
+  <div class="container">
+  <img src="/Images/Me.jpg" alt="Profile picture of an anime character" class="image"/>
+  <div class="overlay">
+    <img src="/Images/PFPIzumi.png" alt="Profile picture of an anime character" class="image_2" />
+    </div>
+  </div>
+</figcaption>
+
+      
 
       <article>
         <h2>Hi this is my portfolio!</h2>
+        <section id="projects">
+
+        </section>
         <p>this shall be information :D</p>
+       
 
       </article>
+      
+      <script type="module">
+        import {postjson} from './main.js'
+        window.postjson = postjson
+      </script>
+      <form onsubmit="postjson(event, this)">
+        <label>
+          Title
+          <input class="Prog-title" name="title" type ="text" placeholder ="Your title"/>
+          Date
+          <input class="Prog-date" name="date" type ="date"/>
+          Link
+          <input class="Prog-link" name="link" type ="text"/>
+          Description
+          <!-- <textarea rows="6" cols="90" id="description" name="description"></textarea> -->
+          <input class="Prog-Description" id="description" name="description" type ="text" placeholder ="Describe your project!"/>
 
-      <section id="projects">
-        
-
-      </section>
-
+        </label>
+        <input type ="submit">
+      </form>
 
 
      </main>
      <footer>
       
      </footer>
+     
     <script type="module" src="/main.js"></script>
   </body>
 </html>

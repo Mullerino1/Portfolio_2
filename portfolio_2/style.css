@@ -122,7 +122,36 @@ header{
   text-align: center;
   padding-top: 5px;
 
-  nav, a{
+  nav{
+
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: var(--Dblue);
+      
+  
+  li {
+    float: left;
+  
+  
+   a {
+    display: block;
+    color: var(--White);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+}
+  }
+  
+  li a:hover{
+    background-color: #111;
+  }
+  }
+  /* nav, a{
     display: inline-block;
     text-align: center;
     background-color: var(--Dblue);
@@ -130,32 +159,110 @@ header{
     text-decoration: none;
     padding: none;
     width: 100%;
+    box-shadow: 10px;
     
 
     ul, li{
       display: inline-block;
       text-align: center;
       padding: 10px;
-      
     }
     
     
-  }
+  } */
 
 }
 
+/* figcaption{
+  padding-top: 15px;
+}
+
+img{
+  background-image: url("/Images/PFPIzumi.png");
+  display: block;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 10px 20px var(--Black);
+  
+}
+
+img:hover{
+  background-image: url("/Images/Me.jpg");
+
+} */
+
+figcaption{
+  padding-top: 15px;
+
+.container{
+  position: relative;
+
+ }
+
+ .image{
+  display: block;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 10px 20px var(--Black);
+ }
+ 
+ 
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* height: 100%;
+    width: 100%; */
+    opacity: 0;
+    transition: .5s ease;
+  }
+ 
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .image_2{
+    display: block;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 10px 20px var(--Black);
+  }
+}
 
 main{
   background-color: var(--Lgray);
   text-align: center;
 
-  img{
+  article{
+    background-color: var(--White);
+    position: relative;
+    left: auto;
+    width: 200px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+
+
+  }
+
+  form{
     display: block;
-    border-radius: 50%;
+    position: right;
     margin-left: auto;
     margin-right: auto;
-    /* width: 50% */
-    
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background-color: var(--White);
+  }
+
+  footer{
+    display: flex;
   }
 }
 

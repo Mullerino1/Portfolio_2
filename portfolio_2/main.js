@@ -64,6 +64,41 @@ import './style.css'
             
             fetchDataFromServer()
 
+
+
+            export async function postjson(event, form) {
+
+                const formData = new FormData(form)
+
+                const title = formData.get('title')
+                const date = formData.get('date')
+                const link = formData.get('link')
+                const definition = formData.get('description')
+                const [year, month, day] = date.split("-")
+
+                await fetch('http://localhost:3999/postjson', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+
+                    body: JSON.stringify({
+                        [title]: {
+                            "title": title,
+                            "date": {
+                                "day": day,
+                                "month": month,
+                                "year": year
+                            },
+                            "link": link,
+                            "description": description
+                            
+                        }
+                    })
+                })
+
+                window.location.replace('/')
+            }
             
 
 
