@@ -26,7 +26,8 @@
     
 
       
-
+<div class="row">
+  <div class="column">
       <article>
         <h2>Hi this is my portfolio!</h2>
         <section id="projects">
@@ -35,7 +36,9 @@
         <p>this shall be information :D</p>
        
       </article>
+    </div>
 
+    <div class="column">
       <figcaption>
         <div class="container">
         <img src="/Images/Me.jpg" alt="Profile picture of an anime character" class="image"/>
@@ -44,11 +47,13 @@
           </div>
         </div>
       </figcaption>
+    </div>
 
       <script type="module">
         import {postjson} from './main.js'
         window.postjson = postjson
       </script>
+      <div class="column">
       
       <form onsubmit="postjson(event, this)">
         <label>
@@ -65,10 +70,13 @@
         </label>
         <input type ="submit" class="button">
       </form>
+    </div>
+    </div>
 
 
      </main>
      <footer>
+      <p>this will be the footer</p>
       
      </footer>
      
