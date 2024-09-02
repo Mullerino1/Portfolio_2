@@ -9,24 +9,14 @@
     "link": "here's a link",
     "description": "Description"
   },
-  "test": {
-    "title": "test",
+  "Testing": {
+    "title": "Testing",
     "date": {
-      "day": "18",
+      "day": "02",
       "month": "09",
       "year": "2024"
     },
-    "link": "link",
-    "description": {}
-  },
-  "stupid": {
-    "title": "stupid",
-    "date": {
-      "day": "12",
-      "month": "09",
-      "year": "2024"
-    },
-    "link": "stupid",
+    "link": "this is nothing",
     "description": {}
   }
 }
