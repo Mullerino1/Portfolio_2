@@ -67,6 +67,7 @@ import './style.css'
 
 
             export async function postjson(event, form) {
+                event.preventDefault()
 
                 const formData = new FormData(form)
 
