@@ -26,8 +26,8 @@
     
 
       
-<div class="row">
-  <div class="column">
+<section class="row">
+  <section class="column">
       <article>
         <h2>Hi this is my portfolio!</h2>
         <section id="projects">
@@ -36,24 +36,24 @@
         <p>this shall be information :D</p>
        
       </article>
-    </div>
+    </section>
 
-    <div class="column">
+    <section class="column">
       <figcaption>
-        <div class="container">
+        <section class="container">
         <img src="/Images/Me.jpg" alt="Profile picture of an anime character" class="image"/>
-        <div class="overlay">
+        <section class="overlay">
           <img src="/Images/PFPIzumi.png" alt="Profile picture of an anime character" class="image_2" />
-          </div>
-        </div>
+        </section>
+      </section>
       </figcaption>
-    </div>
+    </section>
 
       <script type="module">
         import {postjson} from './main.js'
         window.postjson = postjson
       </script>
-      <div class="column">
+      <section class="column">
       
       <form onsubmit="postjson(event, this)">
         <label>
@@ -70,8 +70,8 @@
         </label>
         <input type ="submit" class="button">
       </form>
-    </div>
-    </div>
+    </section>
+  </section>
 
 
      </main>
