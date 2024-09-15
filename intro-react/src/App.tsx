@@ -1,6 +1,59 @@
-import Contact from "./Components/Contact"
-import Experiences from "./Components/Experiences"
-import Header from "./Components/Header"
+type ContactProps = {
+  email: string
+}
+
+ function Contact(props: ContactProps) {
+  return (
+      <p>
+        {props.email}
+      </p>
+    
+  )
+}
+
+
+
+
+// type ExperienceProps = {
+//   experienceOne: string,
+//   experienceTwo: string
+// }
+
+// function Experience(props: ExperienceProps){
+//   return (
+//     <>
+//       {props.experienceOne}
+//       {props.experienceTwo}
+//     </>
+//   )
+// }
+
+type HeaderProps = {
+  student: string,
+  degree: string,
+  points: number
+}
+
+function Header(props: HeaderProps){
+  return (
+  <>
+    {props.student}
+    {props.degree} {props.points} 
+  </>
+
+  )
+}
+
+
+function Experiences({ experienceOne, experienceTwo }) {
+  return (
+    <div>
+      <Experience description={experienceOne} />
+      <Experience description={experienceTwo} />
+    </div>
+  )
+}
+
 
 
 function App() {
@@ -21,3 +74,4 @@ function App() {
 }
 
 export default App
+
